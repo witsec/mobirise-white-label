@@ -1,7 +1,7 @@
 {
     "name": "White Label",
     "alias": "witsec-white-label",
-    "version": 0.1,
+    "version": 0.2,
     "minAppVersion": "4",
     "appScript": true,
 	"description":"White label your website by removing references to the generator in the source code.",

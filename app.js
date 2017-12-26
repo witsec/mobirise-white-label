@@ -8,9 +8,9 @@
 					var c = a.projectSettings["white-label"] || "";
 
 					if (c) {
-						b = b.replace(/^ *<meta name="generator".+>$/img, '')
-						b = b.replace(/^ *<!-- Site made with.+-->$/img, '')
-						b = b.replace(/^ *<section class="engine">.+<\/section>$/img, '')
+						b = b.replace(/<meta name="generator".+>/img, '')
+						b = b.replace(/<!-- Site made with.+-->/img, '')
+						b = b.replace(/<section class="engine">.+<\/section>/img, '')
 					}
 
 					return b
