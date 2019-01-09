@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.5 (2019-01-09)
+
+- Updated regular expression for engine tag
+- Added filter for alt-tags containing "Mobirise" (makes it empty)
+
 ## 0.4 (2018-11-12)
 
 - Added 'Learn more...' link in extension description
