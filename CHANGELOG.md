@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## v3 (2019-11-01)
+
+- Updated the way site settings were handled
+- Added another filter, so the "top-1" element doesn't contain sponsor messages
+
 ## 0.5 (2019-01-09)
 
 - Updated regular expression for engine tag
