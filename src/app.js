@@ -1,9 +1,11 @@
-(function(jQuery, mbrApp) {
+defineM("witsec-white-label", function(g, mbrApp, tr) {
     mbrApp.regExtension({
         name: "witsec-white-label",
         events: {
             load: function() {
-                var a = this;
+				var a = this;
+				
+				// On publish, remove references to Mobirise
                 a.addFilter("publishHTML", function(b) {
 					var c = a.projectSettings["witsec-white-label"] || false;
 
@@ -42,7 +44,14 @@
 					b.push(c);
 					return b
 				});
+
+				// Respond to enabling/disabling white label
+				mbrApp.$body.on("change", "#witsec-white-label", function() {
+					if (!$("#witsec-white-label").prop("checked")) {
+						a.projectSettings["witsec-white-label"] = false;
+					}
+				});
 			}
         }
     })
-})(jQuery, mbrApp);
+}, ["jQuery", "mbrApp", "TR()"]);

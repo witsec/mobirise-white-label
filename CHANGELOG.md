@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## v4 (2020-03-14)
+
+- Fixed compatibility with Mobirise v5
+
 ## v3 (2019-11-01)
 
 - Updated the way site settings were handled
