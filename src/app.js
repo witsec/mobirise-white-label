@@ -15,6 +15,7 @@ defineM("witsec-white-label", function(g, mbrApp, tr) {
 						b = b.replace(/<section.*class=['"]?engine['"]?[\s\S]*?<\/section>/img, '')
 						b = b.replace(/alt="Mobirise"/img, 'alt=""')
 						b = b.replace(/(<body.*>)/igm, "$1\n\n<section id='top-1'></section>\n\n");
+						b = b.replace(/<section style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;">.*?<\/section>/img, '')
 					}
 
 					return b
