@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## v6 (2020-09-13)
+
+- Added another filter, so the sponsor message below the footer is removed (v5.1.7 Beta)
+
 ## v5 (2020-08-29)
 
 - Added another filter, so the sponsor message below the footer is removed
