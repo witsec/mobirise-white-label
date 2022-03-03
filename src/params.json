@@ -1,9 +1,10 @@
 {
-    "name": "White Label v7",
+    "name": "White Label v8",
     "alias": "witsec-white-label",
-    "version": 7,
+    "version": 8,
     "minAppVersion": "4.10.17",
     "appScript": true,
-	"description":"White label your website by removing references to Mobirise in the source code. <a href='https://witsec.nl'>Learn more...</a>",
-	"logo":"thumbnail.svg"
+	"description":"White label your website by removing (most) references to Mobirise in the source code. <a href='https://witsec.nl'>Learn more...</a>",
+    "largeCover": "cover.jpg",
+    "logo" : "thumbnail.jpg"
 }

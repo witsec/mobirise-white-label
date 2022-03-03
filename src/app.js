@@ -5,7 +5,7 @@ defineM("witsec-white-label", function(g, mbrApp, tr) {
             load: function() {
 				var a = this;
 				
-				// On publish, remove references to Mobirise
+				// On publish, remove (most) references to Mobirise
                 a.addFilter("publishHTML", function(b) {
 					var c = a.projectSettings["witsec-white-label"] || false;
 
@@ -14,9 +14,9 @@ defineM("witsec-white-label", function(g, mbrApp, tr) {
 						b = b.replace(/<!-- Site made with.+-->/img, '')
 						b = b.replace(/<section.*class=['"]?engine['"]?[\s\S]*?<\/section>/img, '')
 						b = b.replace(/alt="Mobirise"/img, 'alt=""')
-						//b = b.replace(/(<body.*>)/igm, "$1\n\n<section id='top-1'></section>\n\n");
 						b = b.replace(/<section style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;">.*?<\/section>/img, '');
 						b = b.replace(/<section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;">.*?<\/section>/img, '<section id="top-1" hidden><a href="https://mobirise.site"></a></section>');
+						b = b.replace(/<section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;">(.*?)<\/section>/img, '<section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section>');
 					}
 
 					return b

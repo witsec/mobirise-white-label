@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## v8 (2022-03-03)
+
+- Added another filter, so the sponsor message below the footer is less visible (v5.6.3)
+
 ## v7 (2020-09-25)
 
 - Changed one of the filters, otherwise the website won't be exported properly (because of a change in v5.1.11 Beta)
