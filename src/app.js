@@ -21,6 +21,22 @@ defineM("witsec-white-label", function(g, mbrApp, tr) {
 
 					return b
 				});
+				
+				a.addFilter("publishTemplating", function (b, filename) {
+					var c = a.projectSettings["witsec-white-label"] || false;
+
+					if (c) {
+						
+						// full filename = web/app/themes/mobirise5/plugins/theme/js/script.js
+						if (filename.endsWith("theme/js/script.js")) { 
+							// Remove Loading of https://r.mobirise.com/script.js, see: https://github.com/witsec/mobirise-white-label/issues/5
+							b = b.replace(/_0x3886a9\(0x1b0,'8U&Q'\)/img, '" "');
+							return b;
+						}
+					}
+					return b
+				});
+					
 
 				// Add site settings
 				a.addFilter("sidebarProjectSettings",function(b){
