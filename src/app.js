@@ -16,7 +16,8 @@ defineM("witsec-white-label", function(g, mbrApp, tr) {
 						b = b.replace(/alt="Mobirise"/img, 'alt=""')
 						b = b.replace(/<section style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;">.*?<\/section>/img, '');
 						b = b.replace(/<section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;">.*?<\/section>/img, '<section id="top-1" hidden><a href="https://mobirise.site"></a></section>');
-						b = b.replace(/<section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;">(.*?)<\/section>/img, '<section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section>');
+						b = b.replace(/<section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;">(.*?)<\/section>/img, '');
+						b = b.replace(/<section><a href="https://mobiri.se%22%3E/</a><a href="https://mobiri.se%22%3E/</a></section>, '');
 					}
 
 					return b
